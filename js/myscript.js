@@ -10,3 +10,13 @@ console.log(numPlayer);
 
 let numComputer = Math.floor(Math.random()*(7-1)+1);
 console.log(numComputer);
+
+// creare una condizione per la quale si stabilisce chi ha vinto in base al risultato del numero che uscirà
+
+if(numPlayer > numComputer){
+    console.log('Il giocatore ha vinto!');
+} else if ( numPlayer < numComputer){
+    console.log ('Il computer ha vinto!');
+}else{
+    console.log ('Pareggio!');
+}
