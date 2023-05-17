@@ -6,10 +6,10 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 Teniamo presente che per il gioco dei dadi non serviranno gli array, ma per l'esercizio delle mail.... */
 
 let numPlayer = Math.floor(Math.random()*(7-1)+1);
-console.log(numPlayer);
+console.log('Il giocatore ha: ' +numPlayer);
 
 let numComputer = Math.floor(Math.random()*(7-1)+1);
-console.log(numComputer);
+console.log('Il computer ha: ' +numComputer);
 
 // creare una condizione per la quale si stabilisce chi ha vinto in base al risultato del numero che uscirà
 
