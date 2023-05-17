@@ -31,27 +31,26 @@ Tenete presente che non è permesso utilizzare funzioni built-in degli array com
 
 
 
-//const userMail = prompt ('Insert your mail:');
+const userMail = prompt ('Insert your mail:');
 
-
+const arrayMail = ["ciao@gmail.com", "topogigo@yahoo.it", "ironman@hotmail.com", "hulk@libero.it", "drstrange@yahoo.it", "captainamerica1@gmail.com", "spiderman@libero.it", "vedovaneretta@hotmail.it"];
 
 
 const ulElement = document.querySelector('ul');
 
-//for (let i = 0; i < arrayMail.lenght; i++){
-
-    const arrayMail = ["ciao@gmail.com", "topogigo@yahoo.it", "ironman@hotmail.com", "hulk@libero.it", "drstrange@yahoo.it", "captainamerica1@gmail.com", "spiderman@libero.it", "vedovaneretta@hotmail.it"];
-
+for (let i = 0; i < arrayMail.lenght; i++){
 
     const liElement = document.createElement('li');
-    liElement.append(arrayMail);
+    liElement.append(arrayMail[i]);
     
 
-  /*  if(userMail.value == arrayMail[i]){
-        console.log('Perfetto! la mail coincide');
-    } */
+    if(userMail.value == arrayMail[i]){
+        console.log('Perfetto! la mail coincide, puoi accedere');
+    }else if(userMail.value !== arrayMail[i]){
+        console.log('mail inesistente, ritenta');
+    }
 
     ulElement.appendChild(liElement);
 
-//}
+}
 
