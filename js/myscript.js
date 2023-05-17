@@ -7,3 +7,6 @@ Teniamo presente che per il gioco dei dadi non serviranno gli array, ma per l'es
 
 let numPlayer = Math.floor(Math.random()*(7-1)+1);
 console.log(numPlayer);
+
+let numComputer = Math.floor(Math.random()*(7-1)+1);
+console.log(numComputer);
