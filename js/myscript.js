@@ -29,6 +29,29 @@ Chiedi all’utente la sua email, controlla che sia nella lista di chi può acce
 Tenete presente che non è permesso utilizzare funzioni built-in degli array come Array.includes() e Array.indexOf(), pena l'annullamento dell'esercizio.
 ****************************************************************/
 
-const arrayMail = ["ciao@gmail.com", "topogigo@yahoo.it", "ironman@hotmail.com", "hulk@libero.it", "drstrange@yahoo.it", "captainamerica1@gmail.com", "spiderman@libero.it", "vedovaneretta@hotmail.it"];
 
+
+//const userMail = prompt ('Insert your mail:');
+
+
+
+
+const ulElement = document.querySelector('ul');
+
+//for (let i = 0; i < arrayMail.lenght; i++){
+
+    const arrayMail = ["ciao@gmail.com", "topogigo@yahoo.it", "ironman@hotmail.com", "hulk@libero.it", "drstrange@yahoo.it", "captainamerica1@gmail.com", "spiderman@libero.it", "vedovaneretta@hotmail.it"];
+
+
+    const liElement = document.createElement('li');
+    liElement.append(arrayMail);
+    
+
+  /*  if(userMail.value == arrayMail[i]){
+        console.log('Perfetto! la mail coincide');
+    } */
+
+    ulElement.appendChild(liElement);
+
+//}
 
