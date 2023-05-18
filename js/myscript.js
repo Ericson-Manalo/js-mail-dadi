@@ -22,7 +22,6 @@ if(numPlayer > numComputer){
 }
 
 
-
 /* -------------------------------------------------------------
 Mail
 Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
@@ -30,27 +29,21 @@ Tenete presente che non è permesso utilizzare funzioni built-in degli array com
 ****************************************************************/
 
 
+const arrayMail = ['ironman@hotmail.com', 'hulk@libero.it', 'drstrange@yahoo.it'];
 
 const userMail = prompt ('Insert your mail:');
 
-const arrayMail = ["ciao@gmail.com", "topogigo@yahoo.it", "ironman@hotmail.com", "hulk@libero.it", "drstrange@yahoo.it", "captainamerica1@gmail.com", "spiderman@libero.it", "vedovaneretta@hotmail.it"];
+let isMailFound = false;
 
+for (let i = 0; i < arrayMail.length; i++){
 
-const ulElement = document.querySelector('ul');
-
-for (let i = 0; i < arrayMail.lenght; i++){
-
-    const liElement = document.createElement('li');
-    liElement.append(arrayMail[i]);
-    
-
-    if(userMail.value == arrayMail[i]){
-        console.log('Perfetto! la mail coincide, puoi accedere');
-    }else if(userMail.value !== arrayMail[i]){
-        console.log('mail inesistente, ritenta');
+    if(arrayMail[i] === userMail){
+        isMailFound = true;
     }
-
-    ulElement.appendChild(liElement);
-
 }
 
+if(isMailFound){
+    console.log('Accesso consentito');
+}else{
+    console.log('Accesso negato');
+}
